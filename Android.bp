@@ -276,18 +276,18 @@ android_app_import {
     product_specific: true,
 }
 
-android_app_import {
-    name: "AICorePrebuilt-aicore_20250130.00_RC01",
-    owner: "google",
-    apk: "proprietary/product/priv-app/AICorePrebuilt-aicore_20250130.00_RC01/AICorePrebuilt-aicore_20250130.00_RC01.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
+// android_app_import {
+//     name: "AICorePrebuilt-aicore_20250130.00_RC01",
+//     owner: "google",
+//     apk: "proprietary/product/priv-app/AICorePrebuilt-aicore_20250130.00_RC01/AICorePrebuilt-aicore_20250130.00_RC01.apk",
+//     preprocessed: true,
+//     presigned: true,
+//     dex_preopt: {
+//         enabled: false,
+//     },
+//     privileged: true,
+//     product_specific: true,
+// }
 
 android_app_import {
     name: "AppDirectedSMSService",
@@ -406,6 +406,23 @@ android_app_import {
     name: "EuiccGoogle",
     owner: "google",
     apk: "proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "GoogleCamera",
+    owner: "google",
+    apk: "proprietary/product/priv-app/GoogleCamera/GoogleCamera.apk",
+    overrides: [
+        "Aperture",
+        "Camera2",
+    ],
     preprocessed: true,
     presigned: true,
     dex_preopt: {
