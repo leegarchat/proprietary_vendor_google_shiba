@@ -525,6 +525,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/shiba/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/esim-full-v1.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/esim-full-v1.img
 
 ifneq ($(WITH_GMS),true)
+    PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+        system/app/GoogleExtShared/GoogleExtShared.apk \
+        system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
+        system/etc/permissions/privapp-permissions-google.xml \
+        system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
+        system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk \
+        system/priv-app/TagGoogle/TagGoogle.apk
     PRODUCT_PACKAGES += \
         RadioConfigLib \
         AICorePrebuilt-aicore_20250130.00_RC01 \

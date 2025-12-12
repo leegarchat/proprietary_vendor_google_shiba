@@ -3,7 +3,6 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-
 ifeq ($(TARGET_DEVICE),shiba)
 
     $(call add-radio-file-sha1-checked,radio/abl.img,056c6d3b86168aaa39bec04939138dcc1d0fcfe3)
@@ -22,7 +21,6 @@ ifeq ($(TARGET_DEVICE),shiba)
 # Условие: Добавляем эти пакеты ТОЛЬКО если WITH_GMS не true
 # ---------------------------------------------------------
 ifneq ($(WITH_GMS),true)
-
     # Конвертация dex_import из bp в mk
     include $(CLEAR_VARS)
         LOCAL_MODULE := RadioConfigLib
