@@ -20,31 +20,31 @@ ifeq ($(TARGET_DEVICE),shiba)
 # ---------------------------------------------------------
 # Условие: Добавляем эти пакеты ТОЛЬКО если WITH_GMS не true
 # ---------------------------------------------------------
-ifneq ($(WITH_GMS),true)
-    # Конвертация dex_import из bp в mk
-    include $(CLEAR_VARS)
-        LOCAL_MODULE := RadioConfigLib
-        LOCAL_MODULE_TAGS := optional
-        LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-        LOCAL_MODULE_SUFFIX := .jar
-        LOCAL_SRC_FILES := proprietary/system_ext/framework/RadioConfigLib.jar
-        LOCAL_SYSTEM_EXT_MODULE := true
-    include $(BUILD_PREBUILT)
+# ifneq ($(WITH_GMS),true)
+# Конвертация dex_import из bp в mk
+# include $(CLEAR_VARS)
+# 	LOCAL_MODULE := RadioConfigLib
+# 	LOCAL_MODULE_TAGS := optional
+# 	LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+# 	LOCAL_MODULE_SUFFIX := .jar
+# 	LOCAL_SRC_FILES := proprietary/system_ext/framework/RadioConfigLib.jar
+# 	LOCAL_SYSTEM_EXT_MODULE := true
+# include $(BUILD_PREBUILT)
 
-    # Конвертация android_app_import из bp в mk
-    include $(CLEAR_VARS)
-        LOCAL_MODULE := AICorePrebuilt-aicore_20250130.00_RC01
-        LOCAL_MODULE_TAGS := optional
-        LOCAL_MODULE_CLASS := APPS
-        LOCAL_MODULE_SUFFIX := .apk
-        LOCAL_SRC_FILES := proprietary/product/priv-app/AICorePrebuilt-aicore_20250130.00_RC01/AICorePrebuilt-aicore_20250130.00_RC01.apk
-        LOCAL_CERTIFICATE := PRESIGNED
-        LOCAL_PRODUCT_MODULE := true
-        LOCAL_PRIVILEGED_MODULE := true
-        LOCAL_DEX_PREOPT := false
-    include $(BUILD_PREBUILT)
-
-    endif
-# ---------------------------------------------------------
+# # Конвертация android_app_import из bp в mk
+# include $(CLEAR_VARS)
+# 	LOCAL_MODULE := AICorePrebuilt-aicore_20250130.00_RC01
+# 	LOCAL_MODULE_TAGS := optional
+# 	LOCAL_MODULE_CLASS := APPS
+# 	LOCAL_MODULE_SUFFIX := .apk
+# 	LOCAL_SRC_FILES := proprietary/product/priv-app/AICorePrebuilt-aicore_20250130.00_RC01/AICorePrebuilt-aicore_20250130.00_RC01.apk
+# 	LOCAL_CERTIFICATE := PRESIGNED
+# 	LOCAL_PRODUCT_MODULE := true
+# 	LOCAL_PRIVILEGED_MODULE := true
+# 	LOCAL_DEX_PREOPT := false
+# include $(BUILD_PREBUILT)
 
 endif
+# ---------------------------------------------------------
+
+# endif
