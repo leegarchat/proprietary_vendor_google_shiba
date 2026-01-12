@@ -3,6 +3,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
+
 ifeq ($(TARGET_DEVICE),shiba)
 
     $(call add-radio-file-sha1-checked,radio/abl.img,056c6d3b86168aaa39bec04939138dcc1d0fcfe3)
@@ -17,34 +18,4 @@ ifeq ($(TARGET_DEVICE),shiba)
     $(call add-radio-file-sha1-checked,radio/pbl.img,55e0ce3ec1636152acd28bc36ad07f00b5b3234f)
     $(call add-radio-file-sha1-checked,radio/tzsw.img,806c933c8df7b4244c802b641379b3381676a4b6)
 
-# ---------------------------------------------------------
-# Условие: Добавляем эти пакеты ТОЛЬКО если WITH_GMS не true
-# ---------------------------------------------------------
-# ifneq ($(WITH_GMS),true)
-# Конвертация dex_import из bp в mk
-# include $(CLEAR_VARS)
-# 	LOCAL_MODULE := RadioConfigLib
-# 	LOCAL_MODULE_TAGS := optional
-# 	LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-# 	LOCAL_MODULE_SUFFIX := .jar
-# 	LOCAL_SRC_FILES := proprietary/system_ext/framework/RadioConfigLib.jar
-# 	LOCAL_SYSTEM_EXT_MODULE := true
-# include $(BUILD_PREBUILT)
-
-# # Конвертация android_app_import из bp в mk
-# include $(CLEAR_VARS)
-# 	LOCAL_MODULE := AICorePrebuilt-aicore_20250130.00_RC01
-# 	LOCAL_MODULE_TAGS := optional
-# 	LOCAL_MODULE_CLASS := APPS
-# 	LOCAL_MODULE_SUFFIX := .apk
-# 	LOCAL_SRC_FILES := proprietary/product/priv-app/AICorePrebuilt-aicore_20250130.00_RC01/AICorePrebuilt-aicore_20250130.00_RC01.apk
-# 	LOCAL_CERTIFICATE := PRESIGNED
-# 	LOCAL_PRODUCT_MODULE := true
-# 	LOCAL_PRIVILEGED_MODULE := true
-# 	LOCAL_DEX_PREOPT := false
-# include $(BUILD_PREBUILT)
-
 endif
-# ---------------------------------------------------------
-
-# endif

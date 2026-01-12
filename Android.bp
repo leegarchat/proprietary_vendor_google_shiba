@@ -11,28 +11,6 @@ soong_namespace {
     ],
 }
 
-dex_import {
-    name: "RadioConfigLib",
-    owner: "google",
-    jars: [
-        "proprietary/system_ext/framework/RadioConfigLib.jar",
-    ],
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "AICorePrebuilt-aicore_20250130.00_RC01",
-    owner: "google",
-    apk: "proprietary/product/priv-app/AICorePrebuilt-aicore_20250130.00_RC01/AICorePrebuilt-aicore_20250130.00_RC01.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
-
 cc_prebuilt_library_shared {
     name: "libdmengine",
     owner: "google",
@@ -298,6 +276,18 @@ android_app_import {
     product_specific: true,
 }
 
+// android_app_import {
+//     name: "AICorePrebuilt-aicore_20250130.00_RC01",
+//     owner: "google",
+//     apk: "proprietary/product/priv-app/AICorePrebuilt-aicore_20250130.00_RC01/AICorePrebuilt-aicore_20250130.00_RC01.apk",
+//     preprocessed: true,
+//     presigned: true,
+//     dex_preopt: {
+//         enabled: false,
+//     },
+//     privileged: true,
+//     product_specific: true,
+// }
 
 android_app_import {
     name: "AppDirectedSMSService",
@@ -387,18 +377,18 @@ android_app_import {
     product_specific: true,
 }
 
-android_app_import {
-    name: "DevicePersonalizationPrebuiltPixel2023-bfinal_aiai_20250217.00_RC08",
-    owner: "google",
-    apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2023-bfinal_aiai_20250217.00_RC08/DevicePersonalizationPrebuiltPixel2023-bfinal_aiai_20250217.00_RC08.apk",
-    preprocessed: true,
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    product_specific: true,
-}
+// android_app_import {
+//     name: "DevicePersonalizationPrebuiltPixel2023-bfinal_aiai_20250217.00_RC08",
+//     owner: "google",
+//     apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2023-bfinal_aiai_20250217.00_RC08/DevicePersonalizationPrebuiltPixel2023-bfinal_aiai_20250217.00_RC08.apk",
+//     preprocessed: true,
+//     presigned: true,
+//     dex_preopt: {
+//         enabled: false,
+//     },
+//     privileged: true,
+//     product_specific: true,
+// }
 
 android_app_import {
     name: "DiagMon",
@@ -763,6 +753,14 @@ dex_import {
     product_specific: true,
 }
 
+dex_import {
+    name: "RadioConfigLib",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/RadioConfigLib.jar",
+    ],
+    system_ext_specific: true,
+}
 
 dex_import {
     name: "com.android.hotwordenrollment.common.util",
