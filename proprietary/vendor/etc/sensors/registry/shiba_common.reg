@@ -173,6 +173,7 @@
   bus_freq_hz=10000000
   spi_mode=0
   spi_word_size=8
+  cs_gpio=67
   gesture_type=3
   intr_id=14
   intr_type=3
@@ -252,3 +253,8 @@
   # event. The initial angle to compare against is taken on a To-Ear event.
   # Default: 30
   from_ear_delta_thresh_angle=30
+
++/vsc/aad_prox
+  # 0: Normal (fusion of Optical Prox with ultrasound presence detector)
+  # 1: Optical Prox Passthrough (skips all other fusion logic)
+  mode=1

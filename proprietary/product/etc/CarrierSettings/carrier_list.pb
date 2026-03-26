@@ -2,6 +2,9 @@
 
 default
 000000
+&
+test001_amarisoft
+00101"ABCD2025
 
 
 test001_zz
@@ -230,6 +233,9 @@ webbing_hk
 	mettel_us
 20801"8915518F
 
+orangentn_fr
+20801"01
+
 20801GID1=33
 20801"33
 
@@ -402,6 +408,9 @@ mobiler_es
 %
 21403IMSI=2140359
 214032140359
+%
+ptvtelecom_es
+21403PTV Telecom
 
 
 jazztel_es
@@ -481,6 +490,9 @@ mobiler_es
 $
 finetwork_es
 21406Mi Operador
+%
+ptvtelecom_es
+21406PTV Telecom
 (
 21406SPN=PEPEPHONE
 21406	PEPEPHONE
@@ -510,6 +522,9 @@ $
 
 21408
 21408
+%
+ptvtelecom_es
+21415PTV Telecom
 
 telecable_es
 21416
@@ -648,20 +663,21 @@ telekom_hr
 
 telekom_hr
 21920HT HR
-
-22001
+
+	yettel_rs
 22001
 
 22002
 22002
-
-22003
+
+
+telekom_rs
 22003
 
 22004
 22004
 
-22005
+a1_rs
 22005
 *
 coopvoce_it
@@ -767,6 +783,9 @@ $
 lycamobile_it
 22235
 Lycamobile
+
+digi_it
+22236
 
 
 vianova_it
@@ -857,6 +876,9 @@ sunrise_ch
 
 spusu_ch
 22871
+
+iway_ch
+22873
 
 
 tmobile_cz
@@ -998,6 +1020,9 @@ webbing_hk
 
 	esimgo_gb
 23415"0033
+
+gigs_gb
+23415"22
 
 23415GID1=70
 23415"70
@@ -1022,6 +1047,9 @@ webbing_hk
 
 	lebara_gb
 23415LEBARA
+
+gigs_gb
+23415Gigs
 
 vodafone_gb
 23415
@@ -1211,10 +1239,9 @@ telenor_dk
 
 tdc_dk
 23810
-$
-lycamobile_dk
-23812
-Lycamobile
+
+lycamobile_dk
+23812
 
 telia_dk
 23820
@@ -1374,11 +1401,8 @@ Lycamobile
 
 dna_fi
 24404
-
-	elisa1_fi
-244052440541
-
-	elisa2_fi
+
+elisa_fi
 24405
 
 24410
@@ -1396,7 +1420,7 @@ Lycamobile
 alcom_fi
 24414
 
-	elisa1_fi
+	elisal_fi
 24421
 
 telia_fi
@@ -1465,8 +1489,8 @@ tinkoff_ru
 "
 25503SPN=DJUICE
 25503DJUICE
-
-25503
+
+kyivstar_ua
 25503
 
 lifecell_ua
@@ -1483,11 +1507,11 @@ tinkoff_ru
 
 25704
 25704
-
-25901
+
+	orange_md
 25901
-
-25902
+
+moldcell_md
 25902
 
 25905
@@ -1572,8 +1596,8 @@ telekom_de
 
 vodafonelab_de
 26209
-
-26214_de
+
+	lebara_de
 26214Lebara
 
 
@@ -1698,13 +1722,15 @@ LycaMobile
 
 nova_is
 27411
-
-
-telekom_al
+
+one_al
 27601
-
-27602
+
+vodafone_al
 27602
+
+one_al
+27603
 
 epic_mt
 27801
@@ -1717,8 +1743,8 @@ telekom_al
 
 	melita_mt
 27877
-
-28001
+
+cytamobile_cy
 28001
 
 28010
@@ -1726,6 +1752,9 @@ telekom_al
 
 primetel_cy
 28020
+
+cablenet_cy
+28022
 
 magticom_ge
 28202
@@ -1786,7 +1815,7 @@ vivacom_bg
 telekom_si
 29341
 
-29364
+t2_si
 29364
 .
 29370IMSI=29370029XXXXXXX
@@ -1824,6 +1853,12 @@ Lycamobile
 
 telekom_me
 29702
+
+mtel_me
+29703
+
+	cogeco_ca
+302150"FFFF
 
 koodo_ca
 302220"4B4F
@@ -1941,9 +1976,6 @@ sasktel_ca
 
 tbaytel_ca
 302720"BA
-
-cityfone_ca
-302720"CC
 
 chatr_ca
 302720"D2
@@ -2162,9 +2194,6 @@ tmobile_us
 
 assurance_us
 310240"1A53
-
-	humane_us
-310240"2501
 (
 consumercellulartmo_us
 310240"2AC9
@@ -2225,6 +2254,27 @@ tmomvno_us
 
 boosttmo_us
 310240"6230
+
+dish_us
+310240"6430
+
+dish_us
+310240"6432
+
+dish_us
+310240"6434
+
+dish_us
+310240"6436
+
+dish_us
+310240"6438
+
+dish_us
+310240"6440
+
+dish_us
+310240"6442
 
 rockisland_us
 310240"6514
@@ -2240,9 +2290,6 @@ tmomvno_us
 
 roccstar_us
 310240"6801
-
-smartless_us
-310240"6802
 
 pwg_us
 310240"6901
@@ -2285,6 +2332,9 @@ tmomvno_us
 
 nymobile_us
 310240"6919
+
+smartless_us
+310240"6922
 
 tello_us
 310240"6941
@@ -2342,9 +2392,6 @@ tmomvno_us
  
 tracfonetmo_us
 310240"DEFF
-
-	humane_us
-310240"FFFF
 
 
 tmobile_us
@@ -2362,9 +2409,6 @@ tmobile_us
 
 assurance_us
 310260"1A53
-
-	humane_us
-310260"2501
 !
 310260GID1=2801
 310260"2801
@@ -2425,6 +2469,30 @@ tmomvno_us
 
 rockisland_us
 310260"6137
+
+boosttmo_us
+310260"6230
+
+dish_us
+310260"6430
+
+dish_us
+310260"6432
+
+dish_us
+310260"6434
+
+dish_us
+310260"6436
+
+dish_us
+310260"6438
+
+dish_us
+310260"6440
+
+dish_us
+310260"6442
 
 rockisland_us
 310260"6514
@@ -2440,9 +2508,6 @@ tmomvno_us
 
 roccstar_us
 310260"6801
-
-smartless_us
-310260"6802
 
 pwg_us
 310260"6901
@@ -2485,6 +2550,9 @@ tmomvno_us
 
 nymobile_us
 310260"6919
+
+smartless_us
+310260"6922
 
 tello_us
 310260"6941
@@ -2542,9 +2610,6 @@ tmomvno_us
  
 tracfonetmo_us
 310260"DEFF
-
-	humane_us
-310260"FFFF
 
 	fi_tmo_us
 31026031026097
@@ -3288,6 +3353,9 @@ $
 
 cellcom_us
 311480"BA00040000000000
+.
+thumbcellular_us
+311480"BA00050000000000
 0
 tracfoneverizon_us
 311480"BA01270000000000
@@ -3653,6 +3721,96 @@ $
 
 dish5gsa_us
 313340"7530
+
+dish5gsa_us
+313350"6332
+
+dish5gsa_us
+313350"6336
+
+dish5gsa_us
+313350"6530
+
+dish5gsa_us
+313350"6538
+
+dish5gsa_us
+313350"6630
+
+dish5gsa_us
+313350"6636
+
+dish5gsa_us
+313350"6638
+
+dish5gsa_us
+313350"6732
+
+dish5gsa_us
+313350"6736
+
+dish5gsa_us
+313350"6738
+
+dish5gsa_us
+313350"6830
+
+dish5gsa_us
+313350"6836
+
+dish5gsa_us
+313350"6838
+
+dish5gsa_us
+313350"7330
+
+dish5gsa_us
+313350"7530
+
+dish5gsa_us
+313360"6332
+
+dish5gsa_us
+313360"6336
+
+dish5gsa_us
+313360"6530
+
+dish5gsa_us
+313360"6538
+
+dish5gsa_us
+313360"6630
+
+dish5gsa_us
+313360"6636
+
+dish5gsa_us
+313360"6638
+
+dish5gsa_us
+313360"6732
+
+dish5gsa_us
+313360"6736
+
+dish5gsa_us
+313360"6738
+
+dish5gsa_us
+313360"6830
+
+dish5gsa_us
+313360"6836
+
+dish5gsa_us
+313360"6838
+
+dish5gsa_us
+313360"7330
+
+dish5gsa_us
+313360"7530
 
 optimera_us
 313380
@@ -3743,9 +3901,9 @@ ubixatt_mx
 
 attmvnos_mx
 334050
-(
-att4g_mx
-334090"FFFFFFFFFFFFFFFFFF
+
+att4g_mx
+334090
 
 
 alestra_mx
@@ -3878,6 +4036,9 @@ digicel_fr
 342600
 342600
 
+apua_ag
+34403
+
 344920
 344920
 
@@ -3910,6 +4071,9 @@ digicel_fr
 
 36269
 36269
+
+setar_aw
+363013630100
 
 363020
 36302
@@ -4885,17 +5049,17 @@ telenor_pk
 
 41250
 41250
-
-41301
+
+slt_lk
 41301
-
-41302
+
+	dialog_lk
 41302
 
 41303
 41303
-
-41305
+
+	airtel_lk
 41305
 
 h3_lk
@@ -5091,8 +5255,8 @@ ooredoo_qa
 
 42901
 42901
-
-42902
+
+ncell_np
 42902
 
 42903
@@ -5296,7 +5460,7 @@ webbing_hk
 45403"
 3597BFD533
 
-45403
+h3_hk
 45403
 
 45404
@@ -5347,7 +5511,10 @@ webbing_hk
 ctm_mo
 45501
 
-45503
+ct_mo
+45502
+
+h3_mo
 45503
 
 ctm_mo
@@ -5355,6 +5522,9 @@ webbing_hk
 
 45505
 45505
+
+ct_mo
+45507
 
 cellcard_kh
 45601
@@ -5460,8 +5630,9 @@ webbing_hk
 
 47201
 47201
-
-47202
+
+
+ooredoo_mv
 47202
 
 digi_my
@@ -5767,8 +5938,8 @@ starhub_sg
 
 55280
 55280
-
-60201
+
+	orange_eg
 60201
 
 60202
@@ -5794,8 +5965,8 @@ starhub_sg
 
 60402
 60402
-
-60501
+
+	orange_tn
 60501
 
 60502
@@ -5830,8 +6001,8 @@ starhub_sg
 
 60704
 60704
-
-60801
+
+	orange_sn
 60801
 
 60802
@@ -5848,8 +6019,8 @@ starhub_sg
 
 60910
 60910
-
-61002
+
+	orange_ml
 61002
 
 61101
@@ -5947,8 +6118,8 @@ starhub_sg
 
 61925
 61925
-
-62001
+
+mtn_gh
 62001
 
 62002
@@ -5965,8 +6136,8 @@ starhub_sg
 
 62120
 62120
-
-62130
+
+mtn_ng
 62130
 
 62150
@@ -6405,8 +6576,8 @@ Lycamobile
 
 	tuenti_ar
 722010"01
-
-72207
+
+movistar_ar
 72207
 
 claro_ar
@@ -6414,14 +6585,17 @@ Lycamobile
 
 claro_ar
 722310
-
-72234
+
+
+telecom_ar
 72234
-
-722340
+
+
+telecom_ar
 722340
-
-722341
+
+
+telecom_ar
 722341
 
 72236
@@ -6664,9 +6838,9 @@ webbing_hk
 webbing_hk
 90131"
 536E617065
-
-ubigi_de
-90137Ubigi
+
+transatel_fr
+90137
 
 bics_be
 90158
@@ -6680,4 +6854,4 @@ webbing_hk
 90198
 1
 verizononsitelte_us
-999480"D100000000000000ù¸Ã‚Ñ"ÙÖôø
+999480"D100000000000000≤∏é˘è"Æ∆Ô«
