@@ -64,6 +64,10 @@
         </sdrHdrRatioMap>
     </highBrightnessMode>
 
+    <quirks>
+        <quirk>canSetBrightnessViaHwc</quirk>
+    </quirks>
+
     <screenBrightnessRampIncreaseMaxMillis>2000</screenBrightnessRampIncreaseMaxMillis>
 
     <ambientBrightnessChangeThresholds>

@@ -10,6 +10,52 @@ soong_namespace {
     ],
 }
 
+
+
+
+
+dex_import {
+    name: "org.carconnectivity.android.digitalkey.timesync",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/org.carconnectivity.android.digitalkey.timesync.jar",
+    ],
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "CccDkTimeSyncService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/CccDkTimeSyncService/CccDkTimeSyncService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "GoogleCamera",
+    owner: "google",
+    apk: "proprietary/product/priv-app/GoogleCamera/GoogleCamera.apk",
+    overrides: [
+        "Aperture",
+        "Camera2",
+    ],
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+
+
+
+
 cc_prebuilt_library_shared {
     name: "libdmengine",
     owner: "google",
@@ -376,7 +422,7 @@ android_app_import {
 }
 
 android_app_import {
-    name: "DeviceIntelligenceNetworkPrebuiltAstrea",
+    name: "DeviceIntelligenceNetworkPrebuiltAstreaPixel",
     owner: "google",
     apk: "proprietary/product/priv-app/DeviceIntelligenceNetworkPrebuiltAstrea/DeviceIntelligenceNetworkPrebuiltAstrea.apk",
     preprocessed: true,
@@ -5732,31 +5778,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "thermal-budget-interface-ndk",
-    owner: "google",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/thermal-budget-interface-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.google.battery_mitigation-V1-ndk",
     owner: "google",
     strip: {
@@ -6674,15 +6695,6 @@ prebuilt_etc_xml {
     name: "android.hardware.security.sharesecret-service.citadel.xml",
     owner: "google",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharesecret-service.citadel.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.thermal-service.pixel.xml",
-    owner: "google",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -8357,43 +8369,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.thermal-service.pixel",
-    owner: "google",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.thermal-service.pixel",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libjsoncpp",
-                "libutils",
-                "libnl",
-                "libbinder_ndk",
-                "android.frameworks.stats-V2-ndk",
-                "android.hardware.power-V1-ndk",
-                "android.hardware.thermal-V3-ndk",
-                "thermal-budget-interface-ndk",
-                "pixel-power-ext-V2-ndk",
-                "pixelatoms-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.usb-service",
     owner: "google",
     target: {
@@ -9553,14 +9528,6 @@ sh_binary {
     owner: "google",
     src: "proprietary/vendor/bin/storage_init.sh",
     filename: "storage_init.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "thermal_symlinks",
-    owner: "google",
-    src: "proprietary/vendor/bin/thermal_symlinks",
-    filename: "thermal_symlinks",
     soc_specific: true,
 }
 
